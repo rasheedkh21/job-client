@@ -8,7 +8,6 @@ export const Container = styled.div`
 `;
 
 export const Navbar = styled.div`
-  position: fixed;
   display: grid;
   grid-template-columns: auto auto auto;
   justify-content: space-evenly;
@@ -19,6 +18,7 @@ export const Navbar = styled.div`
   background-color: #fff;
   box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    
 `;
 export const NavLinks = styled.div`
   display: flex;
@@ -33,6 +33,9 @@ export const NavLinks = styled.div`
     padding: 0;
     margin: 0;
   }
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 export const Intro = styled.div`
   display: flex;
@@ -43,6 +46,21 @@ export const Intro = styled.div`
   height: 50vh;
   background-color: white;
   padding-top: 50px;
+  h1{
+    font-size: 50px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  }
+  p{
+    color: #adb7bd;
+     font-size: 16px;
+      line-height: 26px; 
+      text-indent: 30px;
+      color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -50,7 +68,8 @@ export const Wrapper = styled.div`
   justify-content: start;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  padding-bottom: 40px;
 
   background-color: #f3f3f4;
 `;
@@ -58,18 +77,25 @@ export const Options = styled.div`
   display: flex;
   flex-direction: row;
   width: 70vw;
-  height: 100px;
+  height: fit-content;
   justify-content: space-evenly;
   align-items: center;
   background-color: #fff;
   margin-top: -35px;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 30px;
+  gap: 20px;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+  }
 `;
-export const Companies = styled.div`
-  display: flex;
-  width: 100%;
-`;
+
 export const Jobs = styled.div`
 display:flex;
 flex-direction: column;
@@ -78,4 +104,67 @@ gap:20px;
 height:fit-content;
 margin-top:50px;
 width: 80%;
+
+`
+export const ImgWrapper = styled.div`
+display: flex;
+flex: 2;
+gap: 10px;
+`
+export const ChipWrapper = styled.div`
+display: flex;
+flex: 1;
+gap: 30px;
+.chip{
+font-family: Outfit;
+font-weight: 400px;
+background: #F6F6F6;
+padding:5px;
+border-radius:5px;
+}
+@media (max-width: 435px) {
+display: flex;
+flex-direction: column;
+gap:10px;
+.chip{
+font-family: Outfit;
+font-weight: 400px;
+background: #F6F6F6;
+padding:2px;
+border-radius:5px;
+}
+}
+`
+export const UploadTimeWrapper = styled.div`
+display: flex;
+flex-direction: column;
+flex: 1;
+align-items: end;
+p{
+margin:0px;
+}
+h3{
+margin:0px;
+}
+@media (max-width: 435px) {
+display:none;
+}
+`
+export const ExpandMoreWrapper = styled.div`
+display: flex;
+flex: 1;
+gap:20px;
+`
+export const MobileWrapper = styled.div`
+display: none;
+@media (max-width: 435px) {
+display: flex;
+flex-direction: column;
+p{
+margin:0px;
+}
+h3{
+margin:0px;
+}
+}
 `

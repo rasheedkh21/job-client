@@ -9,7 +9,7 @@ const Footer = () => {
     <div style={{display:"flex", flexDirection:"column"}}>
       <ContainerFoot>
         <div>
-          <h1 style={{ color: " #4348DB", font: "45px", font: "normal" }}>
+          <h1 style={{ color: " #4348DB", font: "45px", }}>
             Jobify
           </h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis dolor sit amet lorem. </p>
