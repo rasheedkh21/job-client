@@ -7,10 +7,10 @@ import Divider from "@mui/material/Divider";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-import FolderIcon from '@mui/icons-material/Folder';
 import Avatar from '@mui/material/Avatar';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 import LogoutIcon from '@mui/icons-material/Logout';
+import AccountCircleTwoToneIcon from '@mui/icons-material/AccountCircleTwoTone';
 
 export default function TemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -77,7 +77,7 @@ export default function TemporaryDrawer() {
     <div>
       {["right"].map((anchor) => (
         <React.Fragment key={anchor}>
-          <Button onClick={toggleDrawer(anchor, true)}><FolderIcon/></Button>
+          <Button onClick={toggleDrawer(anchor, true)}><AccountCircleTwoToneIcon/></Button>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

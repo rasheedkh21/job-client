@@ -18,7 +18,7 @@ export const ContainerFoot = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: start;
+    align-items: center;
   }
 `;
 

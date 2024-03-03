@@ -13,12 +13,10 @@ export const Navbar = styled.div`
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  height: 40px;
-  padding: 30px 50px 30px 50px;
+  height: 60px;
+  padding-bottom: 30px;
   background-color: #fff;
-  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 0px 8px;
-    
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 `;
 export const NavLinks = styled.div`
   display: flex;
@@ -46,20 +44,26 @@ export const Intro = styled.div`
   height: 50vh;
   background-color: white;
   padding-top: 50px;
-  h1{
+  h1 {
     font-size: 50px;
-  font-weight: 600;
-  background-image: linear-gradient(to left, #553c9a, #b393d3);
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #553c9a, #b393d3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
   }
-  p{
+  p {
     color: #adb7bd;
-     font-size: 16px;
-      line-height: 26px; 
-      text-indent: 30px;
-      color: #111; font-family: 'Open Sans', sans-serif; font-size: 30px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center;
+    font-size: 16px;
+    line-height: 26px;
+    text-indent: 30px;
+    color: #111;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: center;
   }
 `;
 export const Wrapper = styled.div`
@@ -70,7 +74,6 @@ export const Wrapper = styled.div`
   width: 100%;
   height: fit-content;
   padding-bottom: 40px;
-
   background-color: #f3f3f4;
 `;
 export const Options = styled.div`
@@ -97,74 +100,87 @@ export const Options = styled.div`
 `;
 
 export const Jobs = styled.div`
-display:flex;
-flex-direction: column;
-border-radius: 25px;
-gap:20px;
-height:fit-content;
-margin-top:50px;
-width: 80%;
-
-`
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  gap: 20px;
+  height: fit-content;
+  margin-top: 50px;
+  width: 80%;
+`;
 export const ImgWrapper = styled.div`
-display: flex;
-flex: 2;
-gap: 10px;
-`
+  display: flex;
+  flex: 2;
+  gap: 10px;
+`;
+
+export const Details = styled.div`
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center; 
+  width: 100%;
+  gap: 30px;
+
+
+  @media (max-width: 435px) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: self-start;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .chip {
+    font-family: Outfit;
+    font-weight: 400px;
+    background: #f6f6f6;
+    padding: 5px;
+    border-radius: 5px;
+    
+  }
+`;
 export const ChipWrapper = styled.div`
-display: flex;
-flex: 1;
-gap: 30px;
-.chip{
-font-family: Outfit;
-font-weight: 400px;
-background: #F6F6F6;
-padding:5px;
-border-radius:5px;
-}
-@media (max-width: 435px) {
-display: flex;
-flex-direction: column;
-gap:10px;
-.chip{
-font-family: Outfit;
-font-weight: 400px;
-background: #F6F6F6;
-padding:2px;
-border-radius:5px;
-}
-}
-`
-export const UploadTimeWrapper = styled.div`
-display: flex;
-flex-direction: column;
-flex: 1;
-align-items: end;
-p{
-margin:0px;
-}
-h3{
-margin:0px;
-}
-@media (max-width: 435px) {
-display:none;
-}
-`
+  display: flex;
+  flex: 1;
+  gap: 30px;
+ 
+
+  @media (max-width: 435px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+  }
+`;
+
 export const ExpandMoreWrapper = styled.div`
-display: flex;
-flex: 1;
-gap:20px;
-`
-export const MobileWrapper = styled.div`
-display: none;
-@media (max-width: 435px) {
-display: flex;
-flex-direction: column;
-p{
-margin:0px;
-}
-h3{
-margin:0px;
-}
-}
-`
+  display: flex;
+  flex: 1;
+  gap: 20px;
+`;
+
+export const UploadTimeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+  p {
+    margin: 0px;
+  }
+  h4 {
+    margin: 0px;
+  }
+  @media (max-width: 950px) {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+  }
+`;

@@ -24,7 +24,7 @@ const Footer = () => {
           <div
             style={{
               display: "flex",
-              justifyContent: "start",
+              justifyContent: "star",
               alignItems: "center",
               gap: "20px",
               cursor: "pointer",
