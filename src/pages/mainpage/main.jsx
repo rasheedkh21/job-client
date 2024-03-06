@@ -31,7 +31,7 @@ import PaidIcon from "@mui/icons-material/Paid";
 import WorkIcon from "@mui/icons-material/Work";
 import { Option, Select } from "@mui/joy";
 import { CloseRounded } from "@mui/icons-material";
-const BASEURL = "http://localhost:5050/api/v1/";
+const BASEURL = "https://abdurashid-job-offer-api.isabek.uz/api/v1/";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
